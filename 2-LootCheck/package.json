@@ -1,15 +1,23 @@
 {
-  "name": "1-basics",
+  "name": "lootcheck",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "enzyme": "^3.11.0",
+    "jest-cli": "^20.0.4",
+    "node-fetch": "^2.6.9",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "sfcookies": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -36,16 +44,13 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
-    "enzyme": "^3.11.0",
-    "jest-cli": "^20.0.4"
-  },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/index.js",
-      "!src/**/tempPolyfills.js"
+      "src/**/*.js"
     ]
+  },
+  "devDependencies": {
+    "fetch-mock": "^9.11.0",
+    "redux-mock-store": "^1.5.4"
   }
 }
